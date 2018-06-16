@@ -33,3 +33,13 @@ Specification
 
 Probability Distributions
 -------------------------
+
+Binomial
+~~~~~~~~
+
+.. code-block:: yaml
+
+  "speckle_distribution_name": "binomial",
+  "n": 43,
+  "p": 0.3
+

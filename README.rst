@@ -51,12 +51,18 @@ Any parameter can be assigned an array of values. A distribution specification i
 Probability Distributions
 -------------------------
 
+Bernoulli
+~~~~~~~~~
+
+* Distribution names: ``bernoulli``
+* ``p`` - Probability for success/for the random variable to take a value of 1.
+
 Binomial
 ~~~~~~~~
 
-* Distribution names: `binomial`
-* `n` - Number of trials.
-* `p` -  Success probability in each trial
+* Distribution names: ``binomial``
+* ``n`` - Number of trials.
+* ``p`` -  Success probability in each trial.
 
 
 

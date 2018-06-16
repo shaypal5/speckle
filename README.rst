@@ -31,15 +31,32 @@ A binomial distribtuion serialized as a JSON object has the form:
 Specification
 =============
 
+General
+-------
+
+All distribution specifications can indclude the ``random seed`` parameter to increase reproducability of specific streams of samples of a distribution.
+
+
+.. https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.random.RandomState.html#numpy.random.RandomState
+.. http://js2007.free.fr/code/index.html#RandomKit
+.. https://github.com/numpy/numpy/tree/master/numpy/random/mtrand
+
+
+Distribution Sets
+-----------------
+
+Any parameter can be assigned an array of values. A distribution specification is understood to specify the set of distribution given by the cartesian product of all value arrays. The case where all parameters are assigned a single value is thus understood so specify a set made of a single distribution, and thus can thought of as specifying a single distribution.
+
+
 Probability Distributions
 -------------------------
 
 Binomial
 ~~~~~~~~
 
-.. code-block:: yaml
+* Distribution names: `binomial`
+* `n` - Number of trials.
+* `p` -  Success probability in each trial
 
-  "speckle_distribution_name": "binomial",
-  "n": 43,
-  "p": 0.3
+
 

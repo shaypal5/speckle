@@ -34,6 +34,11 @@ Specification
 General
 -------
 
+The specification details a simple key-value format for the serialization of probability distributions, and is thus inherently compliant with any serialization formay based on, or supporting, key-value mappings, such as JSON, YAML or HTML.
+
+Reproducability
+~~~~~~~~~~~~~~~
+
 All distribution specifications can indclude the ``random seed`` parameter to increase reproducability of specific streams of samples of a distribution.
 
 
@@ -43,7 +48,7 @@ All distribution specifications can indclude the ``random seed`` parameter to in
 
 
 Distribution Sets
------------------
+~~~~~~~~~~~~~~~~~
 
 Any parameter can be assigned an array of values. A distribution specification is understood to specify the set of distribution given by the cartesian product of all value arrays. The case where all parameters are assigned a single value is thus understood so specify a set made of a single distribution, and thus can thought of as specifying a single distribution.
 

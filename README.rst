@@ -23,7 +23,7 @@ A binomial distribtuion serialized as a JSON object has the form:
 .. code-block:: json
 
   {
-    "speckle_distribution_name": "binomial",
+    "probability_distribution_name": "binomial",
     "n": 43,
     "p": 0.3
   }
